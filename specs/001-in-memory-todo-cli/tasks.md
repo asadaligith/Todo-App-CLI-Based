@@ -24,9 +24,9 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project directory structure (src/, src/models/, src/services/, src/cli/)
-- [ ] T002 [P] Create .gitignore with Python patterns (__pycache__/, *.pyc, .venv/, venv/, .env*)
-- [ ] T003 [P] Create README.md with project overview and usage instructions
+- [x] T001 Create project directory structure (src/, src/models/, src/services/, src/cli/)
+- [x] T002 [P] Create .gitignore with Python patterns (__pycache__/, *.pyc, .venv/, venv/, .env*)
+- [x] T003 [P] Create README.md with project overview and usage instructions
 
 **Checkpoint**: Project structure ready
 
@@ -38,9 +38,9 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Create Todo data model in src/models/todo.py with id, title, description, and is_completed attributes
-- [ ] T005 Create TodoService class in src/services/todo_service.py with in-memory storage (list-based)
-- [ ] T006 Implement unique ID generation in TodoService (sequential starting from 1)
+- [x] T004 Create Todo data model in src/models/todo.py with id, title, description, and is_completed attributes
+- [x] T005 Create TodoService class in src/services/todo_service.py with in-memory storage (list-based)
+- [x] T006 Implement unique ID generation in TodoService (sequential starting from 1)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -54,14 +54,14 @@
 
 ### Implementation for User Story 1
 
-- [ ] T007 [US1] Implement add_todo() method in src/services/todo_service.py with title and optional description parameters
-- [ ] T008 [US1] Implement get_all_todos() method in src/services/todo_service.py to return all todos
-- [ ] T009 [US1] Add title validation in add_todo() to reject empty titles with clear error message
-- [ ] T010 [US1] Create CLI menu system in src/cli/todo_cli.py with display_menu() function
-- [ ] T011 [US1] Implement handle_add_todo() CLI handler in src/cli/todo_cli.py that prompts for title and description
-- [ ] T012 [US1] Implement handle_list_todos() CLI handler in src/cli/todo_cli.py that formats and displays all todos
-- [ ] T013 [US1] Create main application loop in main.py that initializes TodoService and runs CLI menu
-- [ ] T014 [US1] Add formatted output for todo list showing ID, title, description, and completion status
+- [x] T007 [US1] Implement add_todo() method in src/services/todo_service.py with title and optional description parameters
+- [x] T008 [US1] Implement get_all_todos() method in src/services/todo_service.py to return all todos
+- [x] T009 [US1] Add title validation in add_todo() to reject empty titles with clear error message
+- [x] T010 [US1] Create CLI menu system in src/cli/todo_cli.py with display_menu() function
+- [x] T011 [US1] Implement handle_add_todo() CLI handler in src/cli/todo_cli.py that prompts for title and description
+- [x] T012 [US1] Implement handle_list_todos() CLI handler in src/cli/todo_cli.py that formats and displays all todos
+- [x] T013 [US1] Create main application loop in main.py that initializes TodoService and runs CLI menu
+- [x] T014 [US1] Add formatted output for todo list showing ID, title, description, and completion status
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -75,12 +75,12 @@
 
 ### Implementation for User Story 2
 
-- [ ] T015 [US2] Implement complete_todo(todo_id) method in src/services/todo_service.py
-- [ ] T016 [US2] Add validation in complete_todo() to check if todo exists and return clear error for invalid IDs
-- [ ] T017 [US2] Handle gracefully when marking already-completed todo as completed (no error, idempotent operation)
-- [ ] T018 [US2] Implement handle_complete_todo() CLI handler in src/cli/todo_cli.py that prompts for todo ID
-- [ ] T019 [US2] Update display formatting in handle_list_todos() to visually distinguish completed todos (e.g., [✓] vs [ ])
-- [ ] T020 [US2] Add "Mark Complete" option to CLI menu in src/cli/todo_cli.py
+- [x] T015 [US2] Implement complete_todo(todo_id) method in src/services/todo_service.py
+- [x] T016 [US2] Add validation in complete_todo() to check if todo exists and return clear error for invalid IDs
+- [x] T017 [US2] Handle gracefully when marking already-completed todo as completed (no error, idempotent operation)
+- [x] T018 [US2] Implement handle_complete_todo() CLI handler in src/cli/todo_cli.py that prompts for todo ID
+- [x] T019 [US2] Update display formatting in handle_list_todos() to visually distinguish completed todos (e.g., [✓] vs [ ])
+- [x] T020 [US2] Add "Mark Complete" option to CLI menu in src/cli/todo_cli.py
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -94,12 +94,12 @@
 
 ### Implementation for User Story 3
 
-- [ ] T021 [US3] Implement update_todo(todo_id, title=None, description=None) method in src/services/todo_service.py
-- [ ] T022 [US3] Add validation in update_todo() to check if todo exists and return clear error for invalid IDs
-- [ ] T023 [US3] Add title validation in update_todo() to reject empty titles when updating
-- [ ] T024 [US3] Support optional description updates (allow adding, changing, or removing description)
-- [ ] T025 [US3] Implement handle_update_todo() CLI handler in src/cli/todo_cli.py that prompts for ID and new values
-- [ ] T026 [US3] Add "Update Todo" option to CLI menu in src/cli/todo_cli.py
+- [x] T021 [US3] Implement update_todo(todo_id, title=None, description=None) method in src/services/todo_service.py
+- [x] T022 [US3] Add validation in update_todo() to check if todo exists and return clear error for invalid IDs
+- [x] T023 [US3] Add title validation in update_todo() to reject empty titles when updating
+- [x] T024 [US3] Support optional description updates (allow adding, changing, or removing description)
+- [x] T025 [US3] Implement handle_update_todo() CLI handler in src/cli/todo_cli.py that prompts for ID and new values
+- [x] T026 [US3] Add "Update Todo" option to CLI menu in src/cli/todo_cli.py
 
 **Checkpoint**: All user stories 1, 2, and 3 should now be independently functional
 
@@ -113,11 +113,11 @@
 
 ### Implementation for User Story 4
 
-- [ ] T027 [US4] Implement delete_todo(todo_id) method in src/services/todo_service.py
-- [ ] T028 [US4] Add validation in delete_todo() to check if todo exists and return clear error for invalid IDs
-- [ ] T029 [US4] Implement handle_delete_todo() CLI handler in src/cli/todo_cli.py that prompts for todo ID
-- [ ] T030 [US4] Add confirmation message after successful deletion
-- [ ] T031 [US4] Add "Delete Todo" option to CLI menu in src/cli/todo_cli.py
+- [x] T027 [US4] Implement delete_todo(todo_id) method in src/services/todo_service.py
+- [x] T028 [US4] Add validation in delete_todo() to check if todo exists and return clear error for invalid IDs
+- [x] T029 [US4] Implement handle_delete_todo() CLI handler in src/cli/todo_cli.py that prompts for todo ID
+- [x] T030 [US4] Add confirmation message after successful deletion
+- [x] T031 [US4] Add "Delete Todo" option to CLI menu in src/cli/todo_cli.py
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -127,12 +127,12 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T032 [P] Add input validation for numeric ID inputs in all CLI handlers (handle non-numeric gracefully)
-- [ ] T033 [P] Add error handling for edge cases (empty list display, special characters in titles/descriptions)
-- [ ] T034 [P] Implement clean exit option in CLI menu (quit/exit command)
-- [ ] T035 [P] Add welcome message and usage instructions when application starts
-- [ ] T036 [P] Format error messages consistently across all operations
-- [ ] T037 Update README.md with detailed usage examples for each operation
+- [x] T032 [P] Add input validation for numeric ID inputs in all CLI handlers (handle non-numeric gracefully)
+- [x] T033 [P] Add error handling for edge cases (empty list display, special characters in titles/descriptions)
+- [x] T034 [P] Implement clean exit option in CLI menu (quit/exit command)
+- [x] T035 [P] Add welcome message and usage instructions when application starts
+- [x] T036 [P] Format error messages consistently across all operations
+- [x] T037 Update README.md with detailed usage examples for each operation
 
 ---
 
